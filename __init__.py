@@ -8,7 +8,7 @@ class Juniper_skill(MycroftSkill):
     def __init__(self):
         super(WikipediaSkill, self).__init__(name="Juniper_skill")
 
-    @intent_handler(IntentBuilder("").require("Query").require("juniper").require("health"))
+    @intent_handler(IntentBuilder("").require("Query").require("juniper"))
     def handle_intent(self, message):
         # Extract what the user asked about
         self.speak_dialog("good")
