@@ -20,7 +20,7 @@ class Juniper_skill(MycroftSkill):
         str1 = "good device"
 
 
-        self.speak_dialog("good",{"status":str1})
+        self.speak_dialog("Good",{"status":str1})
 
     #def call_api_output(self,input):
 
