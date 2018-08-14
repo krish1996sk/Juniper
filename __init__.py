@@ -11,14 +11,15 @@ class Juniper_skill(MycroftSkill):
     def __init__(self):
         super(Juniper_skill, self).__init__(name="Juniper_skill")
 
-    @intent_handler(IntentBuilder("Good_device").require("Query").require("Juniper").require)
+    @intent_handler(IntentBuilder("Good_device").require("Query").require("Juniper").require("Input"))
     def handle_intent(self, message):
         # Extract what the user asked about
+        str1 = message.data.get("Input")
 
 
-        self.speak_dialog("good",{"status":output})
+        self.speak_dialog("good",{"status":str1})
 
-    def call_api_output(self,input):
+    #def call_api_output(self,input):
 
 
 
