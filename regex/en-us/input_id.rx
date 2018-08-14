@@ -1,1 +1,1 @@
-.*(how is|status of|health of) *(juniper device) (?P<Input>.+)
+.*(how is|status of|health of) *(juniper device) (?P<input_id>.+)
