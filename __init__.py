@@ -1,3 +1,5 @@
+
+import re
 from mycroft.skills.core import MycroftSkill, intent_handler
 from mycroft.util.log import LOG
 from mycroft.util.log import getLogger
