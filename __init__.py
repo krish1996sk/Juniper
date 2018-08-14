@@ -16,8 +16,8 @@ class Juniper_skill(MycroftSkill):
     @intent_handler(IntentBuilder("Good_device").require("Query").require("Juniper").require("input_id"))
     def handle_intent(self, message):
         # Extract what the user asked about
-        #str1 = message.data.get("Input")
-        str1 = "good device"
+        str1 = message.data.get("input_id")
+        #str1 = "good device"
 
 
         self.speak_dialog("Good",{"status":str1})
